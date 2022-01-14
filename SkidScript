@@ -1,0 +1,1411 @@
+
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "thanks";
+        Text = "thank you for being skid";
+    })
+end
+
+if game.PlaceId == 8538472258 then
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "you are in a test game";
+		Text = "thank you for using Efe`s script hub";
+	})
+end
+
+local EfesGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local scroll = Instance.new("ScrollingFrame")
+local Headlessgui = Instance.new("TextButton")
+local syanpse = Instance.new("TextButton")
+local PhysicsGun = Instance.new("TextButton")
+local creanddesc = Instance.new("Frame")
+local cre = Instance.new("TextLabel")
+local desc = Instance.new("TextLabel")
+local omg = Instance.new("TextLabel")
+local title = Instance.new("Frame")
+local title_2 = Instance.new("TextLabel")
+local title2 = Instance.new("TextLabel")
+
+--Properties:
+
+EfesGui.Name = "Efe`s Gui"
+EfesGui.Parent = game.CoreGui
+EfesGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = EfesGui
+main.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+main.Position = UDim2.new(0.325670481, 0, 0.322203666, 0)
+main.Size = UDim2.new(0, 350, 0, 277)
+main.Style = Enum.FrameStyle.RobloxRound
+main.Active = true
+main.Draggable = true
+
+scroll.Name = "scroll"
+scroll.Parent = main
+scroll.Active = true
+scroll.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+scroll.BorderColor3 = Color3.fromRGB(66, 66, 66)
+scroll.Position = UDim2.new(0.535784602, 0, 0.0124985464, 0)
+scroll.Size = UDim2.new(0, 147, 0, 254)
+scroll.ScrollBarThickness = 8
+
+Headlessgui.Name = "Headless gui"
+Headlessgui.Parent = scroll
+Headlessgui.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Headlessgui.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Headlessgui.Position = UDim2.new(0, 0, 0.016879335, 0)
+Headlessgui.Size = UDim2.new(0, 135, 0, 50)
+Headlessgui.Font = Enum.Font.Gotham
+Headlessgui.Text = "Headless Gui"
+Headlessgui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Headlessgui.TextSize = 19.000
+Headlessgui.MouseButton1Down:connect(function()
+	-- Efenin headless sıfaül eşigal
+
+	-- Instances: blah blah
+
+	local Headlessgui = Instance.new("ScreenGui")
+	local main = Instance.new("Frame")
+	local Title = Instance.new("TextLabel")
+	local headless = Instance.new("TextButton")
+	local cre = Instance.new("TextLabel")
+	local cre2 = Instance.new("TextLabel")
+
+	--Properties: blah blah
+
+	Headlessgui.Name = "Headless gui"
+	Headlessgui.Parent = game.CoreGui
+	Headlessgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	main.Name = "main"
+	main.Parent = Headlessgui
+	main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	main.Position = UDim2.new(0.268199205, 0, 0.287145257, 0)
+	main.Size = UDim2.new(0, 338, 0, 234)
+	main.Active = true
+	main.Draggable = true
+
+	Title.Name = "Title"
+	Title.Parent = main
+	Title.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+	Title.BorderColor3 = Color3.fromRGB(53, 53, 53)
+	Title.Size = UDim2.new(0, 338, 0, 53)
+	Title.Font = Enum.Font.Oswald
+	Title.Text = "Headless Head R15 and R6"
+	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Title.TextSize = 43.000
+
+	headless.Name = "headless"
+	headless.Parent = main
+	headless.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+	headless.Position = UDim2.new(0.204142004, 0, 0.43589747, 0)
+	headless.Size = UDim2.new(0, 200, 0, 50)
+	headless.Font = Enum.Font.GothamBlack
+	headless.Text = "Headless"
+	headless.TextColor3 = Color3.fromRGB(0, 0, 0)
+	headless.TextSize = 39.000
+	headless.MouseButton1Down:connect(function()
+		local lp = game:GetService "Players".LocalPlayer
+		if lp.Character:FindFirstChild "Head" then
+			local char = lp.Character
+			char.Archivable = true
+			local new = char:Clone()
+			new.Parent = workspace
+			lp.Character = new
+			wait(2)
+			local oldhum = char:FindFirstChildWhichIsA "Humanoid"
+			local newhum = oldhum:Clone()
+			newhum.Parent = char
+			newhum.RequiresNeck = false
+			oldhum.Parent = nil
+			wait(2)
+			lp.Character = char
+			new:Destroy()
+			wait(1)
+			newhum:GetPropertyChangedSignal("Health"):Connect(
+			function()
+				if newhum.Health <= 0 then
+					oldhum.Parent = lp.Character
+					wait(1)
+					oldhum:Destroy()
+				end
+			end)
+			workspace.CurrentCamera.CameraSubject = char
+			if char:FindFirstChild "Animate" then
+				char.Animate.Disabled = true
+				wait(.1)
+				char.Animate.Disabled = false
+			end
+			lp.Character:FindFirstChild "Head":Destroy()
+		end
+
+	end)
+
+	cre.Name = "cre"
+	cre.Parent = main
+	cre.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	cre.BackgroundTransparency = 1.000
+	cre.Position = UDim2.new(0, 0, 0.888888896, 0)
+	cre.Size = UDim2.new(0, 191, 0, 26)
+	cre.Font = Enum.Font.SourceSans
+	cre.Text = "Gui made by : Grimlxcks#5721"
+	cre.TextColor3 = Color3.fromRGB(0, 0, 0)
+	cre.TextSize = 16.000
+
+	cre2.Name = "cre2"
+	cre2.Parent = main
+	cre2.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+	cre2.Position = UDim2.new(0.215976328, 0, 0.705128193, 0)
+	cre2.Size = UDim2.new(0, 191, 0, 26)
+	cre2.Font = Enum.Font.PermanentMarker
+	cre2.Text = "Efe`s Headless Gui"
+	cre2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	cre2.TextSize = 26.000
+end)
+syanpse.Name = "syanpse"
+syanpse.Parent = scroll
+syanpse.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+syanpse.BorderColor3 = Color3.fromRGB(53, 53, 53)
+syanpse.Position = UDim2.new(0, 0, 0.116858244, 0)
+syanpse.Size = UDim2.new(0, 135, 0, 50)
+syanpse.Font = Enum.Font.Gotham
+syanpse.Text = "Synapse[REAR]"
+syanpse.TextColor3 = Color3.fromRGB(0, 0, 0)
+syanpse.TextSize = 15.000
+syanpse.TextWrapped = true
+syanpse.MouseButton1Down:connect(function()
+	-- Instances:
+
+	local SynapseXreal = Instance.new("ScreenGui")
+	local MainFrame = Instance.new("Frame")
+	local bar = Instance.new("Frame")
+	local Close = Instance.new("TextButton")
+	local ImageLabel = Instance.new("ImageLabel")
+	local security = Instance.new("TextLabel")
+	local EditorFrame = Instance.new("ScrollingFrame")
+	local Source = Instance.new("TextBox")
+	local Comments_ = Instance.new("TextLabel")
+	local Globals_ = Instance.new("TextLabel")
+	local Keywords_ = Instance.new("TextLabel")
+	local RemoteHighlight_ = Instance.new("TextLabel")
+	local Strings_ = Instance.new("TextLabel")
+	local Tokens_ = Instance.new("TextLabel")
+	local Numbers_ = Instance.new("TextLabel")
+	local Lines = Instance.new("TextLabel")
+	local title = Instance.new("TextLabel")
+	local list = Instance.new("Frame")
+	local execute = Instance.new("TextButton")
+	local clear = Instance.new("TextButton")
+	local scripthub = Instance.new("TextButton")
+	local Attach = Instance.new("TextButton")
+	local title_2 = Instance.new("ImageLabel")
+	local scripthub_2 = Instance.new("Frame")
+	local bar_2 = Instance.new("Frame")
+	local select = Instance.new("Frame")
+	local dex = Instance.new("TextButton")
+	local esp = Instance.new("TextButton")
+	local spy = Instance.new("TextButton")
+	local dumper = Instance.new("TextButton")
+	local desc = Instance.new("Frame")
+	local descri = Instance.new("TextLabel")
+	local title_3 = Instance.new("TextLabel")
+	local execute_2 = Instance.new("TextButton")
+	local close = Instance.new("TextButton")
+	local title_4 = Instance.new("ImageLabel")
+
+	local scriptselected = "none"
+	local injected = false
+
+	--Properties:
+
+	SynapseXreal.Name = "Synapse X (real)"
+	SynapseXreal.Parent = game.CoreGui
+	SynapseXreal.ResetOnSpawn = false
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = SynapseXreal
+	MainFrame.Active = true
+	MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	MainFrame.BorderSizePixel = 0
+	MainFrame.Position = UDim2.new(0.0543109924, 0, 0.103222892, 0)
+	MainFrame.Size = UDim2.new(0, 689, 0, 320)
+
+	bar.Name = "bar"
+	bar.Parent = MainFrame
+	bar.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+	bar.BackgroundTransparency = 0.800
+	bar.BorderSizePixel = 0
+	bar.Position = UDim2.new(-0, 0, -0.00296382909, 0)
+	bar.Size = UDim2.new(0, 689, 0, 25)
+
+	Close.Name = "Close"
+	Close.Parent = bar
+	Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Close.BackgroundTransparency = 1.000
+	Close.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	Close.BorderSizePixel = 0
+	Close.Position = UDim2.new(0.969521046, 0, 0, 0)
+	Close.Size = UDim2.new(0, 21, 0, 25)
+	Close.Font = Enum.Font.Arial
+	Close.Text = "X"
+	Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Close.TextSize = 14.000
+	Close.MouseButton1Click:Connect(function()
+		SynapseXreal:Destroy()
+	end)
+
+	ImageLabel.Parent = MainFrame
+	ImageLabel.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+	ImageLabel.BorderSizePixel = 0
+	ImageLabel.Position = UDim2.new(0.0252733715, 0, 0.015625, 27)
+	ImageLabel.Size = UDim2.new(0, 541, 0, 246)
+
+	security.Name = "security"
+	security.Parent = ImageLabel
+	security.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	security.Size = UDim2.new(0, 552, 0, 258)
+	security.Visible = false
+	security.Font = Enum.Font.SourceSans
+	security.TextColor3 = Color3.fromRGB(0, 0, 0)
+	security.TextSize = 14.000
+
+	EditorFrame.Name = "EditorFrame"
+	EditorFrame.Parent = ImageLabel
+	EditorFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+	EditorFrame.BackgroundTransparency = 1.000
+	EditorFrame.BorderColor3 = Color3.fromRGB(61, 61, 61)
+	EditorFrame.Size = UDim2.new(1, 0, 1, 0)
+	EditorFrame.ZIndex = 3
+	EditorFrame.BottomImage = "rbxassetid://148970562"
+	EditorFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+	EditorFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+	EditorFrame.MidImage = "rbxassetid://148970562"
+	EditorFrame.ScrollBarThickness = 5
+	EditorFrame.TopImage = "rbxassetid://148970562"
+
+	Source.Name = "Source"
+	Source.Parent = EditorFrame
+	Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Source.BackgroundTransparency = 1.000
+	Source.Position = UDim2.new(0, 30, 0, 0)
+	Source.Size = UDim2.new(0.945652187, 0, 1, 0)
+	Source.ZIndex = 3
+	Source.ClearTextOnFocus = false
+	Source.Font = Enum.Font.Code
+	Source.MultiLine = true
+	Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+	Source.Text = ""
+	Source.TextColor3 = Color3.fromRGB(204, 204, 204)
+	Source.TextSize = 15.000
+	Source.TextXAlignment = Enum.TextXAlignment.Left
+	Source.TextYAlignment = Enum.TextYAlignment.Top
+
+	Comments_.Name = "Comments_"
+	Comments_.Parent = Source
+	Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Comments_.BackgroundTransparency = 1.000
+	Comments_.Size = UDim2.new(1, 0, 1, 0)
+	Comments_.ZIndex = 5
+	Comments_.Font = Enum.Font.Code
+	Comments_.Text = ""
+	Comments_.TextColor3 = Color3.fromRGB(59, 200, 59)
+	Comments_.TextSize = 15.000
+	Comments_.TextXAlignment = Enum.TextXAlignment.Left
+	Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+	Globals_.Name = "Globals_"
+	Globals_.Parent = Source
+	Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Globals_.BackgroundTransparency = 1.000
+	Globals_.Size = UDim2.new(1, 0, 1, 0)
+	Globals_.ZIndex = 5
+	Globals_.Font = Enum.Font.Code
+	Globals_.Text = ""
+	Globals_.TextColor3 = Color3.fromRGB(132, 214, 247)
+	Globals_.TextSize = 15.000
+	Globals_.TextXAlignment = Enum.TextXAlignment.Left
+	Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+	Keywords_.Name = "Keywords_"
+	Keywords_.Parent = Source
+	Keywords_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Keywords_.BackgroundTransparency = 1.000
+	Keywords_.Size = UDim2.new(1, 0, 1, 0)
+	Keywords_.ZIndex = 5
+	Keywords_.Font = Enum.Font.Code
+	Keywords_.Text = ""
+	Keywords_.TextColor3 = Color3.fromRGB(248, 109, 124)
+	Keywords_.TextSize = 15.000
+	Keywords_.TextXAlignment = Enum.TextXAlignment.Left
+	Keywords_.TextYAlignment = Enum.TextYAlignment.Top
+
+	RemoteHighlight_.Name = "RemoteHighlight_"
+	RemoteHighlight_.Parent = Source
+	RemoteHighlight_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	RemoteHighlight_.BackgroundTransparency = 1.000
+	RemoteHighlight_.Size = UDim2.new(1, 0, 1, 0)
+	RemoteHighlight_.ZIndex = 5
+	RemoteHighlight_.Font = Enum.Font.Code
+	RemoteHighlight_.Text = ""
+	RemoteHighlight_.TextColor3 = Color3.fromRGB(0, 144, 255)
+	RemoteHighlight_.TextSize = 15.000
+	RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
+	RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
+
+	Strings_.Name = "Strings_"
+	Strings_.Parent = Source
+	Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Strings_.BackgroundTransparency = 1.000
+	Strings_.Size = UDim2.new(1, 0, 1, 0)
+	Strings_.ZIndex = 5
+	Strings_.Font = Enum.Font.Code
+	Strings_.Text = ""
+	Strings_.TextColor3 = Color3.fromRGB(173, 241, 149)
+	Strings_.TextSize = 15.000
+	Strings_.TextXAlignment = Enum.TextXAlignment.Left
+	Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+	Tokens_.Name = "Tokens_"
+	Tokens_.Parent = Source
+	Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Tokens_.BackgroundTransparency = 1.000
+	Tokens_.Size = UDim2.new(1, 0, 1, 0)
+	Tokens_.ZIndex = 5
+	Tokens_.Font = Enum.Font.Code
+	Tokens_.Text = ""
+	Tokens_.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Tokens_.TextSize = 15.000
+	Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+	Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+	Numbers_.Name = "Numbers_"
+	Numbers_.Parent = Source
+	Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Numbers_.BackgroundTransparency = 1.000
+	Numbers_.Size = UDim2.new(1, 0, 1, 0)
+	Numbers_.ZIndex = 4
+	Numbers_.Font = Enum.Font.Code
+	Numbers_.Text = ""
+	Numbers_.TextColor3 = Color3.fromRGB(255, 198, 0)
+	Numbers_.TextSize = 15.000
+	Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+	Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+	Lines.Name = "Lines"
+	Lines.Parent = EditorFrame
+	Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Lines.BackgroundTransparency = 1.000
+	Lines.Size = UDim2.new(0, 30, 1, 0)
+	Lines.ZIndex = 4
+	Lines.Font = Enum.Font.Code
+	Lines.Text = "1"
+	Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Lines.TextSize = 15.000
+	Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+	title.Name = "title"
+	title.Parent = MainFrame
+	title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	title.BackgroundTransparency = 1.000
+	title.Position = UDim2.new(0.330062926, 0, 0.00625000056, 0)
+	title.Size = UDim2.new(0, 200, 0, 22)
+	title.Font = Enum.Font.SourceSans
+	title.Text = "Synapse X - vRBX"
+	title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	title.TextSize = 16.000
+
+	list.Name = "list"
+	list.Parent = MainFrame
+	list.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+	list.BorderSizePixel = 0
+	list.Position = UDim2.new(0.820970535, 0, 0.100000001, 0)
+	list.Size = UDim2.new(0, 114, 0, 246)
+
+	execute.Name = "execute"
+	execute.Parent = MainFrame
+	execute.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+	execute.BackgroundTransparency = 0.800
+	execute.BorderSizePixel = 0
+	execute.Position = UDim2.new(0.0095389355, 0, 0.887499988, 0)
+	execute.Size = UDim2.new(0, 92, 0, 30)
+	execute.Font = Enum.Font.Arial
+	execute.Text = "Execute"
+	execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+	execute.TextSize = 14.000
+	execute.MouseButton1Click:Connect(function()
+		if injected == true then
+			loadstring(Source.Text)()
+		end
+		if injected == false then
+			title.Text = "Synapse X - vRBX (not injected! press attach)"
+		end
+	end)
+
+	clear.Name = "clear"
+	clear.Parent = MainFrame
+	clear.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+	clear.BackgroundTransparency = 0.800
+	clear.BorderSizePixel = 0
+	clear.Position = UDim2.new(0.154146105, 0, 0.887499988, 0)
+	clear.Size = UDim2.new(0, 84, 0, 30)
+	clear.Font = Enum.Font.Arial
+	clear.Text = "Clear"
+	clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+	clear.TextSize = 14.000
+	clear.MouseButton1Click:Connect(function()
+		Source.Text = ""
+	end)
+
+	scripthub.Name = "scripthub"
+	scripthub.Parent = MainFrame
+	scripthub.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+	scripthub.BackgroundTransparency = 0.800
+	scripthub.BorderSizePixel = 0
+	scripthub.Position = UDim2.new(0.871768773, 0, 0.887499988, 0)
+	scripthub.Size = UDim2.new(0, 79, 0, 30)
+	scripthub.Font = Enum.Font.Arial
+	scripthub.Text = "Script Hub"
+	scripthub.TextColor3 = Color3.fromRGB(255, 255, 255)
+	scripthub.TextSize = 14.000
+	scripthub.MouseButton1Click:Connect(function()
+		scripthub_2.Visible = true
+	end)
+
+	Attach.Name = "Attach"
+	Attach.Parent = MainFrame
+	Attach.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+	Attach.BackgroundTransparency = 0.800
+	Attach.BorderSizePixel = 0
+	Attach.Position = UDim2.new(0.741144657, 0, 0.887499988, 0)
+	Attach.Size = UDim2.new(0, 84, 0, 30)
+	Attach.Font = Enum.Font.Arial
+	Attach.Text = "Attach"
+	Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Attach.TextSize = 14.000
+	Attach.MouseButton1Click:Connect(function()
+		print("hi")
+		if injected == true then
+			title.Text = "Synapse X - vRBX (already injected!)"
+			wait(1)
+			title.Text = "Synapse X - vRBX"
+		end
+		if injected == false then
+			title.Text = "Synapse X - vRBX (checking...)"
+			wait(0.1)
+			title.Text = "Synapse X - vRBX (injecting...)"
+			wait(1.5)
+			title.Text = "Synapse X - vRBX (checking whitelist...)"
+			wait(0.8)
+			title.Text = "Synapse X - vRBX (scanning...)"
+			wait(0.3)
+			title.Text = "Synapse X - vRBX (ready!)"
+			wait(0.5)
+			title.Text = "Synapse X - vRBX"
+			injected = true
+		end
+	end)
+
+	title_2.Name = "title"
+	title_2.Parent = MainFrame
+	title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	title_2.BackgroundTransparency = 1.000
+	title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
+	title_2.Size = UDim2.new(0, 18, 0, 24)
+	title_2.ZIndex = 14
+	title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
+	title_2.ImageRectSize = Vector2.new(138, 167)
+
+	scripthub_2.Name = "scripthub"
+	scripthub_2.Parent = SynapseXreal
+	scripthub_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	scripthub_2.BorderSizePixel = 0
+	scripthub_2.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
+	scripthub_2.Size = UDim2.new(0, 290, 0, 305)
+	scripthub_2.Visible = false
+	scripthub_2.ZIndex = 100
+
+	bar_2.Name = "bar"
+	bar_2.Parent = scripthub_2
+	bar_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+	bar_2.BackgroundTransparency = 0.800
+	bar_2.BorderSizePixel = 0
+	bar_2.Position = UDim2.new(0, 0, -0.0029638072, 0)
+	bar_2.Size = UDim2.new(0, 290, 0, 25)
+
+	select.Name = "select"
+	select.Parent = scripthub_2
+	select.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	select.BorderSizePixel = 0
+	select.Position = UDim2.new(0.0299979374, 0, 0.104918033, 0)
+	select.Size = UDim2.new(0, 82, 0, 264)
+	select.ZIndex = 110
+
+	dex.Name = "dex"
+	dex.Parent = select
+	dex.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+	dex.BackgroundTransparency = 1.000
+	dex.BorderColor3 = Color3.fromRGB(0, 0, 49)
+	dex.BorderSizePixel = 0
+	dex.Position = UDim2.new(0.0121960752, 0, -1.49011612e-08, 0)
+	dex.Size = UDim2.new(0, 80, 0, 18)
+	dex.Font = Enum.Font.SourceSans
+	dex.Text = " Dark Dex"
+	dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+	dex.TextSize = 14.000
+	dex.TextXAlignment = Enum.TextXAlignment.Left
+	dex.ZIndex = 110
+	dex.MouseButton1Click:Connect(function()
+		scriptselected = "dex"
+	end)
+
+	esp.Name = "esp"
+	esp.Parent = select
+	esp.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+	esp.BackgroundTransparency = 1.000
+	esp.BorderColor3 = Color3.fromRGB(0, 0, 49)
+	esp.BorderSizePixel = 0
+	esp.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
+	esp.Size = UDim2.new(0, 80, 0, 18)
+	esp.Font = Enum.Font.SourceSans
+	esp.Text = " Unnamed ESP"
+	esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+	esp.TextSize = 14.000
+	esp.TextXAlignment = Enum.TextXAlignment.Left
+	esp.ZIndex = 110
+	esp.MouseButton1Click:Connect(function()
+		scriptselected = "esp"
+	end)
+
+	spy.Name = "spy"
+	spy.Parent = select
+	spy.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+	spy.BackgroundTransparency = 1.000
+	spy.BorderColor3 = Color3.fromRGB(0, 0, 49)
+	spy.BorderSizePixel = 0
+	spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
+	spy.Size = UDim2.new(0, 80, 0, 18)
+	spy.Font = Enum.Font.SourceSans
+	spy.Text = " Remote Spy"
+	spy.TextColor3 = Color3.fromRGB(255, 255, 255)
+	spy.TextSize = 14.000
+	spy.TextXAlignment = Enum.TextXAlignment.Left
+	spy.ZIndex = 110
+	spy.MouseButton1Click:Connect(function()
+		scriptselected = "spy"
+	end)
+
+	dumper.Name = "dumper"
+	dumper.Parent = select
+	dumper.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
+	dumper.BackgroundTransparency = 1.000
+	dumper.BorderColor3 = Color3.fromRGB(0, 0, 49)
+	dumper.BorderSizePixel = 0
+	dumper.Position = UDim2.new(0.0121960752, 0, 0.204545438, 0)
+	dumper.Size = UDim2.new(0, 80, 0, 18)
+	dumper.Font = Enum.Font.SourceSans
+	dumper.Text = " SaveInstance"
+	dumper.TextColor3 = Color3.fromRGB(255, 255, 255)
+	dumper.TextSize = 14.000
+	dumper.TextXAlignment = Enum.TextXAlignment.Left
+	dumper.ZIndex = 110
+	dumper.MouseButton1Click:Connect(function()
+		scriptselected = "dumper"
+	end)
+
+	desc.Name = "desc"
+	desc.Parent = scripthub_2
+	desc.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	desc.BorderSizePixel = 0
+	desc.Position = UDim2.new(0.340342641, 0, 0.613114715, 0)
+	desc.Size = UDim2.new(0, 184, 0, 69)
+	desc.ZIndex = 110
+
+	descri.Name = "descri"
+	descri.Parent = desc
+	descri.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	descri.BackgroundTransparency = 1.000
+	descri.BorderSizePixel = 0
+	descri.Position = UDim2.new(0.0112334546, 0, 0, 0)
+	descri.Size = UDim2.new(0, 181, 0, 69)
+	descri.Font = Enum.Font.SourceSans
+	descri.Text = ""
+	descri.TextColor3 = Color3.fromRGB(255, 255, 255)
+	descri.TextSize = 15.000
+	descri.TextWrapped = true
+	descri.TextXAlignment = Enum.TextXAlignment.Left
+	descri.TextYAlignment = Enum.TextYAlignment.Top
+	descri.ZIndex = 125
+
+	title_3.Name = "title"
+	title_3.Parent = scripthub_2
+	title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	title_3.BackgroundTransparency = 1.000
+	title_3.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
+	title_3.Size = UDim2.new(0, 200, 0, 22)
+	title_3.Font = Enum.Font.SourceSans
+	title_3.Text = "Synapse X - Script Hub"
+	title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	title_3.TextSize = 16.000
+	title_3.ZIndex = 110
+
+	execute_2.Name = "execute"
+	execute_2.Parent = scripthub_2
+	execute_2.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+	execute_2.BackgroundTransparency = 0.800
+	execute_2.BorderSizePixel = 0
+	execute_2.Position = UDim2.new(0.34057343, 0, 0.871106505, 0)
+	execute_2.Size = UDim2.new(0, 92, 0, 30)
+	execute_2.Font = Enum.Font.Arial
+	execute_2.Text = "Execute"
+	execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	execute_2.TextSize = 14.000
+	execute_2.ZIndex = 110
+	execute_2.MouseButton1Click:Connect(function()
+		if injected == true then
+			if scriptselected == "dex" then
+				loadstring(game:HttpGet("https://pastebin.com/raw/J8AX35Fg"))()
+			end
+			if scriptselected == "spy" then
+				loadstring(game:HttpGet("https://pastebin.com/raw/u62hTuwR"))()
+			end
+			if scriptselected == "dumper" then
+				saveinstance()
+			end
+			if scriptselected == "esp" then
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
+			end
+			if scriptselected == "none" then
+			end
+		end
+		if injected == false then
+			execute_2.Text = "Not Attached!"
+			wait(1)
+			execute_2.Text = "Execute"
+		end
+	end)
+
+	close.Name = "close"
+	close.Parent = scripthub_2
+	close.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+	close.BackgroundTransparency = 0.800
+	close.BorderSizePixel = 0
+	close.Position = UDim2.new(0.685180664, 0, 0.871106505, 0)
+	close.Size = UDim2.new(0, 84, 0, 30)
+	close.Font = Enum.Font.Arial
+	close.Text = "Close"
+	close.TextColor3 = Color3.fromRGB(255, 255, 255)
+	close.TextSize = 14.000
+	close.ZIndex = 110
+	close.MouseButton1Click:Connect(function()
+		scriptselected = "none"
+		scripthub_2.Visible = false
+	end)
+
+	title_4.Name = "title"
+	title_4.Parent = scripthub_2
+	title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	title_4.BackgroundTransparency = 1.000
+	title_4.Position = UDim2.new(0.00870821718, 0, 0, 0)
+	title_4.Size = UDim2.new(0, 18, 0, 24)
+	title_4.ZIndex = 110
+	title_4.Image = "http://www.roblox.com/asset/?id=7641125882"
+	title_4.ImageRectSize = Vector2.new(138, 167)
+
+	-- Scripts:
+
+	local function SYHNK_fake_script() -- ImageLabel.LocalScript 
+		local script = Instance.new('LocalScript', ImageLabel)
+		local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
+		local global_env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
+		local Source = script.Parent.EditorFrame.Source
+		local Lines = Source.Parent.Lines
+		local Highlight = function(string, keywords)
+			local K = {}
+			local S = string
+			local Token =
+				{
+					["="] = true,
+					["."] = true,
+					[","] = true,
+					["("] = true,
+					[")"] = true,
+					["["] = true,
+					["]"] = true,
+					["{"] = true,
+					["}"] = true,
+					[":"] = true,
+					["*"] = true,
+					["/"] = true,
+					["+"] = true,
+					["-"] = true,
+					["%"] = true,
+					[";"] = true,
+					["~"] = true
+				}
+			for i, v in pairs(keywords) do
+				K[v] = true
+			end
+			S = S:gsub(".", function(c)
+				if Token[c] ~= nil then
+					return "\32"
+				else
+					return c
+				end
+			end)
+			S = S:gsub("%S+", function(c)
+				if K[c] ~= nil then
+					return c
+				else
+					return (" "):rep(#c)
+				end
+			end)
+			return S
+		end
+		local hTokens = function(string)
+			local Token =
+				{
+					["="] = true,
+					["."] = true,
+					[","] = true,
+					["("] = true,
+					[")"] = true,
+					["["] = true,
+					["]"] = true,
+					["{"] = true,
+					["}"] = true,
+					[":"] = true,
+					["*"] = true,
+					["/"] = true,
+					["+"] = true,
+					["-"] = true,
+					["%"] = true,
+					[";"] = true,
+					["~"] = true
+				}
+			local A = ""
+			string:gsub(".", function(c)
+				if Token[c] ~= nil then
+					A = A .. c
+				elseif c == "\n" then
+					A = A .. "\n"
+				elseif c == "\t" then
+					A = A .. "\t"
+				else
+					A = A .. "\32"
+				end
+			end)
+			return A
+		end
+
+		local strings = function(string)
+			local highlight = ""
+			local quote = false
+			string:gsub(".", function(c)
+				if quote == false and c == "\"" then
+					quote = true
+				elseif quote == true and c == "\"" then
+					quote = false
+				end
+				if quote == false and c == "\"" then
+					highlight = highlight .. "\""
+				elseif c == "\n" then
+					highlight = highlight .. "\n"
+				elseif c == "\t" then
+					highlight = highlight .. "\t"
+				elseif quote == true then
+					highlight = highlight .. c
+				elseif quote == false then
+					highlight = highlight .. "\32"
+				end
+			end)
+			return highlight
+		end
+		local comments = function(string)
+			local ret = ""
+			string:gsub("[^\r\n]+", function(c)
+				local comm = false
+				local i = 0
+				c:gsub(".", function(n)
+					i = i + 1
+					if c:sub(i, i + 1) == "--" then
+						comm = true
+					end
+					if comm == true then
+						ret = ret .. n
+					else
+						ret = ret .. "\32"
+					end
+				end)
+				ret = ret
+			end)
+			return ret
+		end
+		local numbers = function(string)
+			local A = ""
+			string:gsub(".", function(c)
+				if tonumber(c) ~= nil then
+					A = A .. c
+				elseif c == "\n" then
+					A = A .. "\n"
+				elseif c == "\t" then
+					A = A .. "\t"
+				else
+					A = A .. "\32"
+				end
+			end)
+			return A
+		end
+		local highlight_source = function(type)
+			if type == "Text" then
+				Source.Text = Source.Text:gsub("\13", "")
+				Source.Text = Source.Text:gsub("\t", "      ")
+				local s = Source.Text
+				Source.Keywords_.Text = Highlight(s, lua_keywords)
+				Source.Globals_.Text = Highlight(s, global_env)
+				Source.RemoteHighlight_.Text = Highlight(s, {"FireServer", "fireServer", "InvokeServer", "invokeServer"})
+				Source.Tokens_.Text = hTokens(s)
+				Source.Numbers_.Text = numbers(s)
+				Source.Strings_.Text = strings(s)
+				local lin = 1
+				s:gsub("\n", function()
+					lin = lin + 1
+				end)
+				Lines.Text = ""
+				for i = 1, lin do
+					Lines.Text = Lines.Text .. i .. "\n"
+				end
+			end
+		end
+		highlight_source("Text")
+		Source.Changed:Connect(highlight_source)
+	end
+	coroutine.wrap(SYHNK_fake_script)()
+	local function AMNA_fake_script() -- MainFrame.Dragging 
+		local script = Instance.new('LocalScript', MainFrame)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local gui = script.Parent
+
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+
+		local function update(input)
+			local delta = input.Position - dragStart
+			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging then
+				update(input)
+			end
+		end)
+	end
+	coroutine.wrap(AMNA_fake_script)()
+	local function VEUJFP_fake_script() -- scripthub_2.Dragging 
+		local script = Instance.new('LocalScript', scripthub_2)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local gui = script.Parent
+
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+
+		local function update(input)
+			local delta = input.Position - dragStart
+			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging then
+				update(input)
+			end
+		end)
+	end
+	coroutine.wrap(VEUJFP_fake_script)()
+	while true do
+		wait(0.01)
+		if scripthub_2.Visible == true then
+			if scriptselected == "none" then
+				descri.Text = ""
+			end
+			if scriptselected == "dex" then
+				descri.Text = "A version of the popular Dex explorer with patches specifically for Synapse X."
+			end
+			if scriptselected == "esp" then
+				descri.Text = "ESP Made by ic3w0lf using the Drawing API."
+			end
+			if scriptselected == "spy" then
+				descri.Text = "Allows you to view RemoteEvents and RemoteFunctions called."
+			end
+			if scriptselected == "dumper" then
+				descri.Text = "Dumps the place as a .rbxl file in your workspace folder."
+			end
+		end
+	end
+end)
+PhysicsGun.Name = "Physics Gun"
+PhysicsGun.Parent = scroll
+PhysicsGun.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+PhysicsGun.BorderColor3 = Color3.fromRGB(53, 53, 53)
+PhysicsGun.Position = UDim2.new(0, 0, 0.218390808, 0)
+PhysicsGun.Size = UDim2.new(0, 135, 0, 50)
+PhysicsGun.Font = Enum.Font.Gotham
+PhysicsGun.Text = "Efe`s Tinekilesis [edited]"
+PhysicsGun.TextColor3 = Color3.fromRGB(0, 0, 0)
+PhysicsGun.TextSize = 14.000
+PhysicsGun.TextWrapped = true
+PhysicsGun.MouseButton1Down:connect(function()
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Efe`s telekinesis";
+		Text = "you can fling and grab unachored parts now";
+	})
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "have fun";
+		Text = "thank you for using Efe`s script hub";
+	})
+
+	local function a(b, c)
+		local d = getfenv(c)
+		local e =
+			setmetatable(
+				{},
+				{__index = function(self, f)
+					if f == "script" then
+					return b
+				else
+					return d[f]
+				end
+				end}
+			)
+		setfenv(c, e)
+		return c
+	end
+	local g = {}
+	local h = Instance.new("Model", game:GetService("Lighting"))
+	local i = Instance.new("Tool")
+	local j = Instance.new("Part")
+	local k = Instance.new("Script")
+	local l = Instance.new("LocalScript")
+	local m = sethiddenproperty or set_hidden_property
+	i.Name = "Telekinesis"
+	i.Parent = h
+	i.Grip = CFrame.new(0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+	i.GripForward = Vector3.new(-0, -1, -0)
+	i.GripRight = Vector3.new(0, 0, 1)
+	i.GripUp = Vector3.new(1, 0, 0)
+	j.Name = "Handle"
+	j.Parent = i
+	j.CFrame = CFrame.new(-17.2635937, 15.4915619, 46, 0, 1, 0, 1, 0, 0, 0, 0, -1)
+	j.Orientation = Vector3.new(0, 180, 90)
+	j.Position = Vector3.new(-17.2635937, 15.4915619, 46)
+	j.Rotation = Vector3.new(-180, 0, -90)
+	j.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+	j.Transparency = 1
+	j.Size = Vector3.new(1, 1.20000005, 1)
+	j.BottomSurface = Enum.SurfaceType.Weld
+	j.BrickColor = BrickColor.new("Really black")
+	j.Material = Enum.Material.Metal
+	j.TopSurface = Enum.SurfaceType.Smooth
+	j.brickColor = BrickColor.new("Really black")
+	k.Name = "LineConnect"
+	k.Parent = i
+	table.insert(
+		g,
+		a(
+			k,
+			function()
+				wait()
+				local n = script.Part2
+				local o = script.Part1.Value
+				local p = script.Part2.Value
+				local q = script.Par.Value
+				local color = script.Color
+				local r = Instance.new("Part")
+				r.TopSurface = 0
+				r.BottomSurface = 0
+				r.Reflectance = .5
+				r.Name = "Laser"
+				r.Locked = true
+				r.CanCollide = false
+				r.Anchored = true
+				r.formFactor = 0
+				r.Size = Vector3.new(1, 1, 1)
+				local s = Instance.new("BlockMesh")
+				s.Parent = r
+				while true do
+					if n.Value == nil then
+						break
+					end
+					if o == nil or p == nil or q == nil then
+						break
+					end
+					if o.Parent == nil or p.Parent == nil then
+						break
+					end
+					if q.Parent == nil then
+						break
+					end
+					local t = CFrame.new(o.Position, p.Position)
+					local dist = (o.Position - p.Position).magnitude
+					r.Parent = q
+					r.BrickColor = color.Value.BrickColor
+					r.Reflectance = color.Value.Reflectance
+					r.Transparency = color.Value.Transparency
+					r.CFrame = CFrame.new(o.Position + t.lookVector * dist / 2)
+					r.CFrame = CFrame.new(r.Position, p.Position)
+					s.Scale = Vector3.new(.25, .25, dist)
+					wait()
+				end
+				r:remove()
+				script:remove()
+			end
+		)
+	)
+	k.Disabled = true
+	l.Name = "MainScript"
+	l.Parent = i
+	table.insert(
+		g,
+		a(
+			l,
+			function()
+				wait()
+				tool = script.Parent
+				lineconnect = tool.LineConnect
+				object = nil
+				mousedown = false
+				found = false
+				BP = Instance.new("BodyPosition")
+				BP.maxForce = Vector3.new(math.huge * math.huge, math.huge * math.huge, math.huge * math.huge)
+				BP.P = BP.P * 1.1
+				dist = nil
+				point = Instance.new("Part")
+				point.Locked = true
+				point.Anchored = true
+				point.formFactor = 0
+				point.Shape = 0
+				point.BrickColor = BrickColor.Black()
+				point.Size = Vector3.new(1, 1, 1)
+				point.CanCollide = false
+				local s = Instance.new("SpecialMesh")
+				s.MeshType = "Sphere"
+				s.Scale = Vector3.new(.7, .7, .7)
+				s.Parent = point
+				handle = tool.Handle
+				front = tool.Handle
+				color = tool.Handle
+				objval = nil
+				local u = false
+				local v = BP:clone()
+				v.maxForce = Vector3.new(30000, 30000, 30000)
+				function LineConnect(o, p, q)
+					local w = Instance.new("ObjectValue")
+					w.Value = o
+					w.Name = "Part1"
+					local x = Instance.new("ObjectValue")
+					x.Value = p
+					x.Name = "Part2"
+					local y = Instance.new("ObjectValue")
+					y.Value = q
+					y.Name = "Par"
+					local z = Instance.new("ObjectValue")
+					z.Value = color
+					z.Name = "Color"
+					local A = lineconnect:clone()
+					A.Disabled = false
+					w.Parent = A
+					x.Parent = A
+					y.Parent = A
+					z.Parent = A
+					A.Parent = workspace
+					if p == object then
+						objval = x
+					end
+				end
+				function onButton1Down(B)
+					if mousedown == true then
+						return
+					end
+					mousedown = true
+					coroutine.resume(
+						coroutine.create(
+							function()
+								local C = point:clone()
+								C.Parent = tool
+								LineConnect(front, C, workspace)
+								while mousedown == true do
+									C.Parent = tool
+									if object == nil then
+										if B.Target == nil then
+											local t = CFrame.new(front.Position, B.Hit.p)
+											C.CFrame = CFrame.new(front.Position + t.lookVector * 1000)
+										else
+											C.CFrame = CFrame.new(B.Hit.p)
+										end
+									else
+										LineConnect(front, object, workspace)
+										break
+									end
+									wait()
+								end
+								C:remove()
+							end
+						)
+					)
+					while mousedown == true do
+						if B.Target ~= nil then
+							local D = B.Target
+							if D.Anchored == false then
+								object = D
+								dist = (object.Position - front.Position).magnitude
+								break
+							end
+						end
+						wait()
+					end
+					while mousedown == true do
+						if object.Parent == nil then
+							break
+						end
+						local t = CFrame.new(front.Position, B.Hit.p)
+						BP.Parent = object
+						BP.position = front.Position + t.lookVector * dist
+						wait()
+					end
+					BP:remove()
+					object = nil
+					objval.Value = nil
+				end
+				function onKeyDown(E, B)
+					local E = E:lower()
+					local F = false
+					if E == "q" then
+						if dist >= 5 then
+							dist = dist - 10
+						end
+					end
+					if E == "r" then
+						if object == nil then
+							return
+						end
+						for G, H in pairs(object:children()) do
+							if H.className == "BodyGyro" then
+								return nil
+							end
+						end
+						BG = Instance.new("BodyGyro")
+						BG.maxTorque = Vector3.new(math.huge, math.huge, math.huge)
+						BG.cframe = CFrame.new(object.CFrame.p)
+						BG.Parent = object
+						repeat
+							wait()
+						until object.CFrame == CFrame.new(object.CFrame.p)
+						BG.Parent = nil
+						if object == nil then
+							return
+						end
+						for G, H in pairs(object:children()) do
+							if H.className == "BodyGyro" then
+								H.Parent = nil
+							end
+						end
+						object.Velocity = Vector3.new(0, 0, 0)
+						object.RotVelocity = Vector3.new(0, 0, 0)
+						object.Orientation = Vector3.new(0, 0, 0)
+					end
+					if E == "e" then
+						dist = dist + 10
+					end
+					if E == "t" then
+						if dist ~= 10 then
+							dist = 10
+						end
+					end
+					if E == "y" then
+						if dist ~= 200 then
+							dist = 200
+						end
+					end
+					if E == "=" then
+						BP.P = BP.P * 1.5
+					end
+					if E == "-" then
+						BP.P = BP.P * 0.5
+					end
+				end
+				function onEquipped(B)
+					keymouse = B
+					local I = tool.Parent
+					human = I.Humanoid
+					human.Changed:connect(
+						function()
+							if human.Health == 0 then
+								mousedown = false
+								BP:remove()
+								point:remove()
+								tool:remove()
+							end
+						end
+					)
+					B.Button1Down:connect(
+						function()
+							onButton1Down(B)
+						end
+					)
+					B.Button1Up:connect(
+						function()
+							mousedown = false
+						end
+					)
+					B.KeyDown:connect(
+						function(E)
+							onKeyDown(E, B)
+						end
+					)
+					B.Icon = "rbxasset://textures\\GunCursor.png"
+				end
+				tool.Equipped:connect(onEquipped)
+			end
+		)
+	)
+	for J, H in pairs(h:GetChildren()) do
+		H.Parent = game:GetService("Players").LocalPlayer.Backpack
+		pcall(
+			function()
+				H:MakeJoints()
+			end
+		)
+	end
+	h:Destroy()
+	for J, H in pairs(g) do
+		spawn(
+			function()
+				pcall(H)
+			end
+		)
+	end
+end)
+creanddesc.Name = "cre and desc"
+creanddesc.Parent = main
+creanddesc.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+creanddesc.BorderColor3 = Color3.fromRGB(66, 66, 66)
+creanddesc.Position = UDim2.new(0.00901262835, 0, 0.0130169038, 0)
+creanddesc.Size = UDim2.new(0, 151, 0, 254)
+
+cre.Name = "cre"
+cre.Parent = creanddesc
+cre.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+cre.BorderColor3 = Color3.fromRGB(53, 53, 53)
+cre.Position = UDim2.new(0.0294795763, 0, 0.828093469, 0)
+cre.Size = UDim2.new(0, 142, 0, 23)
+cre.Font = Enum.Font.SourceSans
+cre.Text = "Grimlxcks#5721"
+cre.TextColor3 = Color3.fromRGB(0, 0, 0)
+cre.TextSize = 22.000
+
+desc.Name = "desc"
+desc.Parent = creanddesc
+desc.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+desc.BorderColor3 = Color3.fromRGB(53, 53, 53)
+desc.Position = UDim2.new(0.0294795744, 0, 0.0406918861, 0)
+desc.Size = UDim2.new(0, 142, 0, 70)
+desc.Font = Enum.Font.SourceSans
+desc.Text = "some scripts are not mine some of them are edited"
+desc.TextColor3 = Color3.fromRGB(0, 0, 0)
+desc.TextScaled = true
+desc.TextSize = 22.000
+desc.TextWrapped = true
+
+omg.Name = "omg"
+omg.Parent = creanddesc
+omg.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+omg.BorderColor3 = Color3.fromRGB(53, 53, 53)
+omg.Position = UDim2.new(0.0294795763, 0, 0.450140774, 0)
+omg.Size = UDim2.new(0, 142, 0, 57)
+omg.Font = Enum.Font.SourceSans
+omg.Text = "omg so skid Gui"
+omg.TextColor3 = Color3.fromRGB(0, 0, 0)
+omg.TextScaled = true
+omg.TextSize = 22.000
+omg.TextWrapped = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.Position = UDim2.new(-0.022590071, 0, -0.261485755, 0)
+title.Size = UDim2.new(0, 349, 0, 61)
+title.Style = Enum.FrameStyle.RobloxRound
+
+title_2.Name = "title"
+title_2.Parent = title
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Position = UDim2.new(0.059527114, 0, 0.154911727, 0)
+title_2.Size = UDim2.new(0, 133, 0, 33)
+title_2.Font = Enum.Font.JosefinSans
+title_2.LineHeight = 0.790
+title_2.Text = "Efe`s"
+title_2.TextColor3 = Color3.fromRGB(109, 109, 109)
+title_2.TextSize = 33.000
+title_2.TextWrapped = true
+
+title2.Name = "title2"
+title2.Parent = title
+title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title2.BackgroundTransparency = 1.000
+title2.Position = UDim2.new(0.265055835, 0, 0.130672514, 0)
+title2.Size = UDim2.new(0, 203, 0, 33)
+title2.Font = Enum.Font.IndieFlower
+title2.LineHeight = 0.670
+title2.Text = "Script Hub"
+title2.TextColor3 = Color3.fromRGB(109, 109, 109)
+title2.TextSize = 38.000
+title2.TextWrapped = true
