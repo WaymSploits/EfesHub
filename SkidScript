@@ -1,10 +1,8 @@
+-- Efe pıro gui
+-- Version: 3.2
 
+-- Instances:
 
-game:GetService("StarterGui"):SetCore("SendNotification",{
-        Title = "thanks";
-        Text = "thank you for being skid";
-    })
-end
 
 if game.PlaceId == 8538472258 then
 	game:GetService("StarterGui"):SetCore("SendNotification",{
